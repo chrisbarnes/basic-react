@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './Button';
 import './App.css';
 
 class App extends Component {
@@ -25,11 +26,11 @@ class App extends Component {
     const formClasses = this.state.isOpen ? 'input-box input-box--open' : 'input-box';
     return (
       <div className="App">
-        <button type="button" onClick={this.toggleInput}>hello</button>
+        <Button onClick={this.toggleInput}>hello</Button>
 
         <form className={formClasses}>
           <input type="text" />
-          <button type="button" onClick={this.submitForm}>Submit</button>
+          <Button onClick={this.submitForm}>Submit</Button>
         </form>
       </div>
     );
